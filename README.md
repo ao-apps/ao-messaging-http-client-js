@@ -3,7 +3,7 @@ JavaScript client for asynchronous bidirectional messaging over HTTP.
 
 ## Project Links
 * [Project Home](https://www.aoindustries.com/ao-messaging/http/client-js/)
-* [Maven Central Repository](http://search.maven.org/#search|gav|1|g:%22com.aoindustries%22%20AND%20a:%22ao-messaging-http-client-js%22)
+* [Maven Central Repository](https://search.maven.org/#search|gav|1|g:%22com.aoindustries%22%20AND%20a:%22ao-messaging-http-client-js%22)
 * [GitHub](https://github.com/aoindustries/ao-messaging-http-client-js)
 
 ## Contact Us
