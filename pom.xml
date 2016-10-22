@@ -27,7 +27,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 	<parent>
 		<groupId>com.aoindustries</groupId>
 		<artifactId>ao-messaging</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.2-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.aoindustries</groupId>
@@ -43,7 +43,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 	<scm>
 		<connection>scm:git:git://github.com/aoindustries/ao-messaging-http-client-js.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/ao-messaging-http-client-js.git</developerConnection>
-		<url>http://github.com/aoindustries/ao-messaging-http-client-js</url>
+		<url>https://github.com/aoindustries/ao-messaging-http-client-js</url>
 		<tag>HEAD</tag>
 	</scm>
 </project>
