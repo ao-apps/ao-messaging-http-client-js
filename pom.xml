@@ -36,12 +36,11 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 	<packaging>jar</packaging>
 
 	<properties>
-		<bookPath>/${project.parent.artifactId}/http/client-js</bookPath>
 		<shortTitle>Client JS</shortTitle>
 	</properties>
 
 	<name>AO Messaging HTTP Client JS</name>
-	<url>https://aoindustries.com${bookPath}/</url><!-- Can't inherit due to multi-module -->
+	<url>https://aoindustries.com/${project.parent.artifactId}/http/client-js/</url>
 	<description>JavaScript client for asynchronous bidirectional messaging over HTTP.</description>
 	<inceptionYear>2014</inceptionYear>
 
