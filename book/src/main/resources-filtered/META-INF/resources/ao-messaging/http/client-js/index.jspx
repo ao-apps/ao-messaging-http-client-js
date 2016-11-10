@@ -37,7 +37,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 	>
 		<core:child page="changelog.jspx" />
 		<p>
-			@{description.html}
+			@{documented.description}
 		</p>
 		<section:section label="Project Links">
 			<ul>
