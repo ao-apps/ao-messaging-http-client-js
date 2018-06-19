@@ -1,4 +1,4 @@
-# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://aoindustries.com/) [AO Messaging](https://aoindustries.com/ao-messaging/) / [HTTP](https://aoindustries.com/ao-messaging/http/) / [Client JS](https://aoindustries.com/ao-messaging/http/client-js/)
+# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/aoindustries) [AO Messaging](https://github.com/aoindustries/ao-messaging) / [HTTP](https://github.com/aoindustries/ao-messaging-http) / [Client JS](https://github.com/aoindustries/ao-messaging-http-client-js)
 <p>
 	<a href="https://aoindustries.com/life-cycle#project-current-stable">
 		<img src="https://aoindustries.com/ao-badges/project-current-stable.svg" alt="project: current stable" />
