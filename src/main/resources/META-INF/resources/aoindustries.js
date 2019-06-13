@@ -1,6 +1,6 @@
 /*
  * ao-messaging-http-client-js - JavaScript client for asynchronous bidirectional messaging over HTTP.
- * Copyright (C) 2014, 2016  AO Industries, Inc.
+ * Copyright (C) 2014, 2016, 2019  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -196,7 +196,7 @@ aoindustries.messaging.http = new function() {
 				// Clear the queue
 				while(outQueue.length > 0) outQueue.pop();
 				// Contact the server
-				var currentRequest = $.ajax({
+				var currentRequest = jQuery.ajax({
 					cache : false,
 					timeout : READ_TIMEOUT,
 					type : "POST",
@@ -207,8 +207,8 @@ aoindustries.messaging.http = new function() {
 						if(!isClosed()) {
 							// Parse the response
 							// Add all messages to the inQueue by sequence to handle out-of-order messages
-							$(data).find('messages').find('message').each(function() {
-								var messageElem = $(this);
+							jQuery(data).find('messages').find('message').each(function() {
+								var messageElem = jQuery(this);
 								// Get the sequence
 								var seq = messageElem.attr("seq");
 								// Get the type
@@ -309,7 +309,7 @@ aoindustries.messaging.http = new function() {
 		 */
 		this.connect = function(endpoint, timeout, onConnect, onError) {
 			var connectTime = (new Date()).getTime();
-			$.ajax({
+			jQuery.ajax({
 				cache : false,
 				timeout : timeout,
 				type : "POST",
@@ -320,7 +320,7 @@ aoindustries.messaging.http = new function() {
 				dataType : "xml",
 				success : function(data, textStatus, jqXHR) {
 					// Parse the response
-					var id = $(data).find('connection').attr('id');
+					var id = jQuery(data).find('connection').attr('id');
 					if(onConnect) onConnect(new HttpSocket(id, connectTime, endpoint));
 				},
 				error : function(jqXHR, textStatus, errorThrown) {
