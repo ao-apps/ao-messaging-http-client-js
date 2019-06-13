@@ -44,4 +44,18 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 		<url>https://github.com/aoindustries/${project.artifactId}</url>
 		<tag>HEAD</tag>
 	</scm>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.webjars</groupId><artifactId>jquery</artifactId><version>3.4.1</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.webjars</groupId><artifactId>jquery</artifactId>
+		</dependency>
+	</dependencies>
 </project>
