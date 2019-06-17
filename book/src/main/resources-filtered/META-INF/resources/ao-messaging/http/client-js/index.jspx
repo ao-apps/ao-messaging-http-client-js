@@ -40,14 +40,14 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 		<header>
 			<ao:include
 				page="/ao-badges/badges.inc.jspx"
-				arg.projectStatus="${currentPage.property.projectStatus}"
-				arg.managementStatus="${currentPage.property.managementStatus}"
-				arg.packagingStatus="${currentPage.property.packagingStatus}"
-				arg.ecmascriptVersion="${currentPage.property.ecmascriptVersion}"
-				arg.javascriptVersion="${currentPage.property.javascriptVersion}"
-				arg.jqueryVersion="${currentPage.property.jqueryVersion}"
-				arg.semanticVersioning="${currentPage.property.semanticVersioning}"
-				arg.license="${currentPage.property.license}"
+				arg.projectStatus="current-stable"
+				arg.managementStatus="production"
+				arg.packagingStatus="active"
+				arg.ecmascriptVersion="3"
+				arg.javascriptVersion="1.5"
+				arg.jqueryVersion="1.x"
+				arg.semanticVersioning="2.0.0"
+				arg.license="lgpl-3.0"
 			/>
 		</header>
 		<p>
