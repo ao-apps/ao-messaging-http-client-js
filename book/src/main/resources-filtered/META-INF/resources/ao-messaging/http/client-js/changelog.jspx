@@ -36,7 +36,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-29T20:45:00-0500"
-		dateModified="2019-06-12T23:01:53-0500"
+		dateModified="2019-06-21T05:14:56-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-messaging-http-client-js:pom.version}" />
@@ -51,17 +51,26 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
-			>
-				<ul>
-					<li>Updated version of <core:link book="/ao-oss-parent" page="/index.jspx" />.</li>
-					<li>Changed "$" to "jQuery" for compatibility with <ao:a href="https://api.jquery.com/jquery.noconflict/">jQuery.noConflict()</ao:a>.</li>
-					<li>
-						Added <ao:a href="https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/">jQuery 3.4.1</ao:a>
-						as a Maven dependency via <ao:a href="https://www.webjars.org/">WebJars</ao:a>.
-					</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.1.1"
+			datePublished="2019-06-21T05:14:56-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>Updated version of <core:link book="/ao-oss-parent" page="/index.jspx" />.</li>
+				<li>Changed "$" to "jQuery" for compatibility with <ao:a href="https://api.jquery.com/jquery.noconflict/">jQuery.noConflict()</ao:a>.</li>
+				<li>
+					Added <ao:a href="https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/">jQuery 3.4.1</ao:a>
+					as a Maven dependency via <ao:a href="https://www.webjars.org/">WebJars</ao:a>.
+				</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
