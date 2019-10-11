@@ -87,7 +87,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 		</dependency>
 		<!-- Direct -->
 		<dependency>
-			<groupId>com.aoindustries</groupId><artifactId>ao-badges</artifactId><version>1.2.0-SNAPSHOT</version>
+			<groupId>com.aoindustries</groupId><artifactId>ao-badges</artifactId><version>1.2.0-POST-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.aoindustries</groupId><artifactId>ao-taglib</artifactId><version>4.0.0-POST-SNAPSHOT</version>
