@@ -52,6 +52,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<!-- Runtime Direct -->
 				<groupId>org.webjars</groupId><artifactId>jquery</artifactId><version>3.4.1</version>
 			</dependency>
 		</dependencies>
@@ -59,7 +60,9 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 
 	<dependencies>
 		<dependency>
+			<!-- Runtime Direct -->
 			<groupId>org.webjars</groupId><artifactId>jquery</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 </project>
