@@ -25,7 +25,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.aoindustries</groupId><artifactId>ao-oss-parent</artifactId><version>1.10.0-POST-SNAPSHOT</version>
+		<groupId>com.aoindustries</groupId><artifactId>ao-oss-parent</artifactId><version>1.11.0-SNAPSHOT</version>
 		<relativePath>../../ao-oss-parent/pom.xml</relativePath>
 	</parent>
 
@@ -48,6 +48,20 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 		<system>GitHub Issues</system>
 		<url>https://github.com/aoindustries/ao-messaging-http-client-js/issues</url>
 	</issueManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
+				<configuration>
+					<usedDependencies>
+						<!-- Runtime Direct -->
+						<dependency>org.webjars:jquery</dependency>
+					</usedDependencies>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 	<dependencyManagement>
 		<dependencies>
