@@ -65,16 +65,16 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- Runtime Direct -->
 			<dependency>
-				<!-- Runtime Direct -->
 				<groupId>org.webjars</groupId><artifactId>jquery</artifactId><version>3.5.1</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
 	<dependencies>
+		<!-- Runtime Direct -->
 		<dependency>
-			<!-- Runtime Direct -->
 			<groupId>org.webjars</groupId><artifactId>jquery</artifactId>
 			<scope>runtime</scope>
 		</dependency>
