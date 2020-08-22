@@ -56,7 +56,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 				<configuration>
 					<usedDependencies>
 						<!-- Runtime Direct -->
-						<dependency>org.webjars:jquery</dependency>
+						<dependency>org.webjars.npm:jquery</dependency>
 					</usedDependencies>
 				</configuration>
 			</plugin>
@@ -67,7 +67,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 		<dependencies>
 			<!-- Runtime Direct -->
 			<dependency>
-				<groupId>org.webjars</groupId><artifactId>jquery</artifactId><version>3.5.1</version>
+				<groupId>org.webjars.npm</groupId><artifactId>jquery</artifactId><version>3.5.1</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -75,7 +75,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 	<dependencies>
 		<!-- Runtime Direct -->
 		<dependency>
-			<groupId>org.webjars</groupId><artifactId>jquery</artifactId>
+			<groupId>org.webjars.npm</groupId><artifactId>jquery</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
