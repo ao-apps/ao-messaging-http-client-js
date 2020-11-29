@@ -37,7 +37,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-29T20:45:00-0500"
-		dateModified="2020-08-22T00:54:26-05:00"
+		dateModified="2020-11-28T22:38:14-06:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-messaging-http-client-js:pom.version}" />
@@ -52,22 +52,31 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
-			>
-				<ul>
-					<li>
-						<p>
-							Switched to <ao:a href="https://www.npmjs.com/">NPM</ao:a>-based <ao:a href="https://www.webjars.org/">WebJars</ao:a>
-							in groupId <code><ao:a href="https://search.maven.org/search?q=g:org.webjars.npm">org.webjars.npm</ao:a></code>,
-							where possible.  The NPM WebJars seem more up-to-date and actively supported than Classic WebJars.
-						</p>
-						<p>
-							Furthermore, <ao:a href="https://snyk.io/blog/bower-is-dead/">Bower has been deprecated</ao:a>,
-							so we are reluctant to use either "Bower GitHub" or "Bower Original" WebJars.
-						</p>
-					</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="2.0.0"
+			datePublished="2020-11-28T22:38:14-06:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>
+					<p>
+						Switched to <ao:a href="https://www.npmjs.com/">NPM</ao:a>-based <ao:a href="https://www.webjars.org/">WebJars</ao:a>
+						in groupId <code><ao:a href="https://search.maven.org/search?q=g:org.webjars.npm">org.webjars.npm</ao:a></code>,
+						where possible.  The NPM WebJars seem more up-to-date and actively supported than Classic WebJars.
+					</p>
+					<p>
+						Furthermore, <ao:a href="https://snyk.io/blog/bower-is-dead/">Bower has been deprecated</ao:a>,
+						so we are reluctant to use either "Bower GitHub" or "Bower Original" WebJars.
+					</p>
+				</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
