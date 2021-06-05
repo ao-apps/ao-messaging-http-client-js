@@ -1,6 +1,6 @@
 /*
  * ao-messaging-http-client-js - JavaScript client for asynchronous bidirectional messaging over HTTP.
- * Copyright (C) 2014, 2016, 2019  AO Industries, Inc.
+ * Copyright (C) 2014, 2016, 2019, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -20,9 +20,9 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/licenses/>.
  */
-if(typeof aoindustries === 'undefined') aoindustries = {};
+if(typeof aoapps === 'undefined') aoapps = {};
 
-aoindustries.lang = new function() {
+aoapps.lang = new function() {
 	// <editor-fold desc="Exception" defaultstate="collapsed">
 	/**
 	 * @constructor
@@ -31,7 +31,7 @@ aoindustries.lang = new function() {
 		this.message = message;
 	};
 
-	Exception.prototype.type = 'aoindustries.lang.Exception';
+	Exception.prototype.type = 'aoapps.lang.Exception';
 
 	Exception.prototype.toString = function() {
 		return (this.message !== undefined)
@@ -51,7 +51,7 @@ aoindustries.lang = new function() {
 	AssertionError.prototype = new Exception();
 	AssertionError.prototype.constructor = AssertionError;
 
-	AssertionError.prototype.type = 'aoindustries.lang.AssertionError';
+	AssertionError.prototype.type = 'aoapps.lang.AssertionError';
 	// </editor-fold>
 
 	// <editor-fold desc="AbstractMethodError" defaultstate="collapsed">
@@ -70,7 +70,7 @@ aoindustries.lang = new function() {
 	AbstractMethodError.prototype = new Exception();
 	AbstractMethodError.prototype.constructor = AbstractMethodError;
 
-	AbstractMethodError.prototype.type = 'aoindustries.lang.AbstractMethodError';
+	AbstractMethodError.prototype.type = 'aoapps.lang.AbstractMethodError';
 	// </editor-fold>
 
 	// <editor-fold desc="IllegalArgumentException" defaultstate="collapsed">
@@ -84,43 +84,43 @@ aoindustries.lang = new function() {
 	IllegalArgumentException.prototype = new Exception();
 	IllegalArgumentException.prototype.constructor = IllegalArgumentException;
 
-	IllegalArgumentException.prototype.type = 'aoindustries.lang.IllegalArgumentException';
+	IllegalArgumentException.prototype.type = 'aoapps.lang.IllegalArgumentException';
 	// </editor-fold>
 };
 
-aoindustries.io = new function() {
+aoapps.io = new function() {
 	// <editor-fold desc="IOException" defaultstate="collapsed">
 	/**
 	 * @constructor
 	 */
 	var IOException = this.IOException = function(message) {
-		aoindustries.lang.Exception.call(this, message);
+		aoapps.lang.Exception.call(this, message);
 	};
 
-	IOException.prototype = new aoindustries.lang.Exception();
+	IOException.prototype = new aoapps.lang.Exception();
 	IOException.prototype.constructor = IOException;
 
-	IOException.prototype.type = 'aoindustries.io.IOException';
+	IOException.prototype.type = 'aoapps.io.IOException';
 	// </editor-fold>
 };
 
-aoindustries.messaging = new function() {
+aoapps.messaging = new function() {
 	// <editor-fold desc="SocketException" defaultstate="collapsed">
 	/**
 	 * @constructor
 	 */
 	var SocketException = this.SocketException = function(message) {
-		aoindustries.lang.Exception.call(this, message);
+		aoapps.lang.Exception.call(this, message);
 	};
 
-	SocketException.prototype = new aoindustries.lang.Exception();
+	SocketException.prototype = new aoapps.lang.Exception();
 	SocketException.prototype.constructor = SocketException;
 
-	SocketException.prototype.type = 'aoindustries.messaging.SocketException';
+	SocketException.prototype.type = 'aoapps.messaging.SocketException';
 	// </editor-fold>
 };
 
-aoindustries.messaging.http = new function() {
+aoapps.messaging.http = new function() {
 	// <editor-fold desc="HttpSocket" defaultstate="collapsed">
 	/**
 	 * @constructor
@@ -218,10 +218,10 @@ aoindustries.messaging.http = new function() {
 								if(type==="s") {
 									message = messageElem.text();
 								} else {
-									throw new aoindustries.lang.AssertionError("Unsupported message type: " + type);
+									throw new aoapps.lang.AssertionError("Unsupported message type: " + type);
 								}
 								if(inQueue[seq] !== undefined) {
-									throw new aoindustries.io.IOException("Duplicate incoming sequence: " + seq);
+									throw new aoapps.io.IOException("Duplicate incoming sequence: " + seq);
 								}
 								inQueue[seq] = message;
 							});
@@ -252,7 +252,7 @@ aoindustries.messaging.http = new function() {
 								// TODO: This assumption may be incorrect and would be better to have other way to know if error is caused simply by the user leaving the page.
 								close();
 							} else {
-								var exc = new aoindustries.io.IOException(jqXHR.status + " " + errorThrown);
+								var exc = new aoapps.io.IOException(jqXHR.status + " " + errorThrown);
 								for(var i=0; i<listeners.length; i++) {
 									listeners[i].onError(thisSocket, exc);
 								}
@@ -277,7 +277,7 @@ aoindustries.messaging.http = new function() {
 
 		this.start = function(onStart, onError) {
 			if(isClosed()) {
-				if(onError) onError(new aoindustries.messaging.SocketException("Socket is closed"));
+				if(onError) onError(new aoapps.messaging.SocketException("Socket is closed"));
 			} else {
 				sendIfNeeded();
 				if(onStart) onStart(thisSocket);
@@ -324,7 +324,7 @@ aoindustries.messaging.http = new function() {
 					if(onConnect) onConnect(new HttpSocket(id, connectTime, endpoint));
 				},
 				error : function(jqXHR, textStatus, errorThrown) {
-					if(onError) onError(new aoindustries.io.IOException(jqXHR.status + " " + errorThrown));
+					if(onError) onError(new aoapps.io.IOException(jqXHR.status + " " + errorThrown));
 				}
 			});
 		};
