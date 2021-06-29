@@ -32,6 +32,10 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 	<groupId>com.aoapps</groupId><artifactId>ao-messaging-http-client-js</artifactId><version>3.0.0-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
+	<properties>
+		<module.name>com.aoapps.messaging.http.client.js</module.name>
+	</properties>
+
 	<name>AO Messaging HTTP Client JS</name>
 	<url>https://oss.aoapps.com/messaging/http/client-js/</url>
 	<description>JavaScript client for asynchronous bidirectional messaging over HTTP.</description>
