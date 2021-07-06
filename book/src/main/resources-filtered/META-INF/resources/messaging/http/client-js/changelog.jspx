@@ -45,7 +45,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 				version="@{project.version}"
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
-				repository="https://s01.oss.sonatype.org/content/repositories/snapshots/"
+				repository="@{nexusUrl}content/repositories/snapshots/"
 				scmUrl="@{project.scm.url}"
 			>
 				<ul>
