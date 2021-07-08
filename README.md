@@ -1,31 +1,13 @@
 # [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/aoindustries) [AO OSS](https://github.com/aoindustries/ao-oss) / [Messaging](https://github.com/aoindustries/ao-messaging) / [HTTP](https://github.com/aoindustries/ao-messaging-http) / [Client JS](https://github.com/aoindustries/ao-messaging-http-client-js)
-<p>
-	<a href="https://aoindustries.com/life-cycle#project-current-stable">
-		<img src="https://oss.aoapps.com/ao-badges/project-current-stable.svg" alt="project: current stable" />
-	</a>
-	<a href="https://aoindustries.com/life-cycle#management-production">
-		<img src="https://oss.aoapps.com/ao-badges/management-production.svg" alt="management: production" />
-	</a>
-	<a href="https://aoindustries.com/life-cycle#packaging-active">
-		<img src="https://oss.aoapps.com/ao-badges/packaging-active.svg" alt="packaging: active" />
-	</a>
-	<br />
-	<a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
-		<img src="https://oss.aoapps.com/ao-badges/ecmascript-3.svg" alt="ecmascript: &gt;= 3" />
-	</a>
-	<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.5">
-		<img src="https://oss.aoapps.com/ao-badges/javascript-1.5.svg" alt="javascript: &gt;= 1.5" />
-	</a>
-	<a href="https://api.jquery.com/">
-		<img src="https://oss.aoapps.com/ao-badges/jquery-1.x.svg" alt="jquery: &gt;= 1.x" />
-	</a>
-	<a href="http://semver.org/spec/v2.0.0.html">
-		<img src="https://oss.aoapps.com/ao-badges/semver-2.0.0.svg" alt="semantic versioning: 2.0.0" />
-	</a>
-	<a href="https://www.gnu.org/licenses/lgpl-3.0">
-		<img src="https://oss.aoapps.com/ao-badges/license-lgpl-3.0.svg" alt="license: LGPL v3" />
-	</a>
-</p>
+
+[![project: current stable](https://oss.aoapps.com/ao-badges/project-current-stable.svg)](https://aoindustries.com/life-cycle#project-current-stable)
+[![management: production](https://oss.aoapps.com/ao-badges/management-production.svg)](https://aoindustries.com/life-cycle#management-production)
+[![packaging: active](https://oss.aoapps.com/ao-badges/packaging-active.svg)](https://aoindustries.com/life-cycle#packaging-active)  
+[![ecmascript: &gt;= 3](https://oss.aoapps.com/ao-badges/ecmascript-3.svg)](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+[![javascript: &gt;= 1.5](https://oss.aoapps.com/ao-badges/javascript-1.5.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.5)
+[![jquery: &gt;= 1.x](https://oss.aoapps.com/ao-badges/jquery-1.x.svg)](https://api.jquery.com/)
+[![semantic versioning: 2.0.0](https://oss.aoapps.com/ao-badges/semver-2.0.0.svg)](http://semver.org/spec/v2.0.0.html)
+[![license: LGPL v3](https://oss.aoapps.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
 JavaScript client for asynchronous bidirectional messaging over HTTP.
 
