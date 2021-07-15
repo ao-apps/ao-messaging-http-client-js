@@ -80,6 +80,11 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 		<url>https://github.com/aoindustries/ao-messaging-http-client-js/issues</url>
 	</issueManagement>
 
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>https://github.com/aoindustries/ao-messaging-http-client-js/actions</url>
+	</ciManagement>
+
 	<repositories>
 		<!-- Repository required here, too, so can find parent -->
 		<repository>
