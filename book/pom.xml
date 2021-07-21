@@ -29,7 +29,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 		<relativePath>../../../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.aoapps</groupId><artifactId>ao-messaging-http-client-js-book</artifactId><version>3.0.0</version>
+	<groupId>com.aoapps</groupId><artifactId>ao-messaging-http-client-js-book</artifactId><version>3.0.0-POST-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -74,7 +74,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 		<connection>scm:git:git://github.com/aoindustries/ao-messaging-http-client-js.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/ao-messaging-http-client-js.git</developerConnection>
 		<url>https://github.com/aoindustries/ao-messaging-http-client-js</url>
-		<tag>ao-messaging-http-client-js-book-3.0.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
