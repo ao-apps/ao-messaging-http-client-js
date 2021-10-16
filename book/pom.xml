@@ -268,7 +268,7 @@ along with ao-messaging-http-client-js.  If not, see <http://www.gnu.org/license
 			</dependency>
 			<!-- BOM -->
 			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>javaee-web-api-bom</artifactId><version>7.0.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+				<groupId>com.aoapps</groupId><artifactId>javaee-web-api-bom</artifactId><version>7.0.1${POST-SNAPSHOT}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
