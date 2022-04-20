@@ -22,118 +22,118 @@ You should have received a copy of the GNU Lesser General Public License
 along with ao-messaging-http-client-js.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>com.aoapps</groupId><artifactId>ao-oss-parent</artifactId><version>1.18.0-SNAPSHOT</version>
-		<relativePath>../../parent/pom.xml</relativePath>
-	</parent>
+  <parent>
+    <groupId>com.aoapps</groupId><artifactId>ao-oss-parent</artifactId><version>1.18.0-SNAPSHOT</version>
+    <relativePath>../../parent/pom.xml</relativePath>
+  </parent>
 
-	<groupId>com.aoapps</groupId><artifactId>ao-messaging-http-client-js</artifactId><version>3.0.0-POST-SNAPSHOT</version>
-	<packaging>bundle</packaging>
+  <groupId>com.aoapps</groupId><artifactId>ao-messaging-http-client-js</artifactId><version>3.0.0-POST-SNAPSHOT</version>
+  <packaging>bundle</packaging>
 
-	<properties>
-		<module.name>com.aoapps.messaging.http.client.js</module.name>
-		<!-- SonarQube -->
-		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
-		<sonar.organization>ao-apps</sonar.organization>
-		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-	</properties>
+  <properties>
+    <module.name>com.aoapps.messaging.http.client.js</module.name>
+    <!-- SonarQube -->
+    <sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
+    <sonar.organization>ao-apps</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  </properties>
 
-	<name>AO Messaging HTTP Client JS</name>
-	<url>https://oss.aoapps.com/messaging/http/client-js/</url>
-	<description>JavaScript client for asynchronous bidirectional messaging over HTTP.</description>
-	<inceptionYear>2014</inceptionYear>
+  <name>AO Messaging HTTP Client JS</name>
+  <url>https://oss.aoapps.com/messaging/http/client-js/</url>
+  <description>JavaScript client for asynchronous bidirectional messaging over HTTP.</description>
+  <inceptionYear>2014</inceptionYear>
 
-	<licenses>
-		<license>
-			<name>GNU General Lesser Public License (LGPL) version 3.0</name>
-			<url>https://www.gnu.org/licenses/lgpl-3.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
+  <licenses>
+    <license>
+      <name>GNU General Lesser Public License (LGPL) version 3.0</name>
+      <url>https://www.gnu.org/licenses/lgpl-3.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
-	<organization>
-		<name>AO Industries, Inc.</name>
-		<url>https://aoindustries.com/</url>
-	</organization>
+  <organization>
+    <name>AO Industries, Inc.</name>
+    <url>https://aoindustries.com/</url>
+  </organization>
 
-	<developers>
-		<developer>
-			<name>AO Industries, Inc.</name>
-			<email>support@aoindustries.com</email>
-			<url>https://aoindustries.com/</url>
-			<organization>AO Industries, Inc.</organization>
-			<organizationUrl>https://aoindustries.com/</organizationUrl>
-		</developer>
-	</developers>
+  <developers>
+    <developer>
+      <name>AO Industries, Inc.</name>
+      <email>support@aoindustries.com</email>
+      <url>https://aoindustries.com/</url>
+      <organization>AO Industries, Inc.</organization>
+      <organizationUrl>https://aoindustries.com/</organizationUrl>
+    </developer>
+  </developers>
 
-	<scm>
-		<connection>scm:git:git://github.com/ao-apps/ao-messaging-http-client-js.git</connection>
-		<developerConnection>scm:git:git@github.com:ao-apps/ao-messaging-http-client-js.git</developerConnection>
-		<url>https://github.com/ao-apps/ao-messaging-http-client-js</url>
-		<tag>HEAD</tag>
-	</scm>
+  <scm>
+    <connection>scm:git:git://github.com/ao-apps/ao-messaging-http-client-js.git</connection>
+    <developerConnection>scm:git:git@github.com:ao-apps/ao-messaging-http-client-js.git</developerConnection>
+    <url>https://github.com/ao-apps/ao-messaging-http-client-js</url>
+    <tag>HEAD</tag>
+  </scm>
 
-	<issueManagement>
-		<system>GitHub Issues</system>
-		<url>https://github.com/ao-apps/ao-messaging-http-client-js/issues</url>
-	</issueManagement>
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/ao-apps/ao-messaging-http-client-js/issues</url>
+  </issueManagement>
 
-	<ciManagement>
-		<system>Jenkins</system>
-		<url>https://jenkins.aoindustries.com/job/ao/job/oss/job/messaging/job/http-client-js/</url>
-	</ciManagement>
-	<!-- Only one allowed in POM:
-	<ciManagement>
-		<system>GitHub Actions</system>
-		<url>https://github.com/ao-apps/ao-messaging-http-client-js/actions</url>
-	</ciManagement>
-	-->
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://jenkins.aoindustries.com/job/ao/job/oss/job/messaging/job/http-client-js/</url>
+  </ciManagement>
+  <!-- Only one allowed in POM:
+  <ciManagement>
+    <system>GitHub Actions</system>
+    <url>https://github.com/ao-apps/ao-messaging-http-client-js/actions</url>
+  </ciManagement>
+  -->
 
-	<repositories>
-		<!-- Repository required here, too, so can find parent -->
-		<repository>
-			<id>sonatype-nexus-snapshots-s01</id>
-			<name>Sonatype Nexus Snapshots S01</name>
-			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<checksumPolicy>fail</checksumPolicy>
-			</snapshots>
-		</repository>
-	</repositories>
+  <repositories>
+    <!-- Repository required here, too, so can find parent -->
+    <repository>
+      <id>sonatype-nexus-snapshots-s01</id>
+      <name>Sonatype Nexus Snapshots S01</name>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <checksumPolicy>fail</checksumPolicy>
+      </snapshots>
+    </repository>
+  </repositories>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
-				<configuration>
-					<usedDependencies>
-						<!-- Runtime Direct -->
-						<dependency>org.webjars.npm:jquery</dependency>
-					</usedDependencies>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
+        <configuration>
+          <usedDependencies>
+            <!-- Runtime Direct -->
+            <dependency>org.webjars.npm:jquery</dependency>
+          </usedDependencies>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
-	<dependencyManagement>
-		<dependencies>
-			<!-- Runtime Direct -->
-			<dependency>
-				<groupId>org.webjars.npm</groupId><artifactId>jquery</artifactId><version>3.6.0</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+  <dependencyManagement>
+    <dependencies>
+      <!-- Runtime Direct -->
+      <dependency>
+        <groupId>org.webjars.npm</groupId><artifactId>jquery</artifactId><version>3.6.0</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
-	<dependencies>
-		<!-- Runtime Direct -->
-		<dependency>
-			<groupId>org.webjars.npm</groupId><artifactId>jquery</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-	</dependencies>
+  <dependencies>
+    <!-- Runtime Direct -->
+    <dependency>
+      <groupId>org.webjars.npm</groupId><artifactId>jquery</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
 </project>
