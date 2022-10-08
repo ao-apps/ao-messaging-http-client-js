@@ -20,7 +20,9 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with ao-messaging-http-client-js.  If not, see <https://www.gnu.org/licenses/>.
  */
-if (typeof aoapps === 'undefined') aoapps = {};
+if (typeof aoapps === 'undefined') {
+  aoapps = {};
+}
 
 aoapps.lang = new function() {
   // <editor-fold desc="Exception" defaultstate="collapsed">
