@@ -124,7 +124,7 @@ along with ao-messaging-http-client-js.  If not, see <https://www.gnu.org/licens
     <dependencies>
       <!-- Runtime Direct -->
       <dependency>
-        <groupId>org.webjars.npm</groupId><artifactId>jquery</artifactId><version>3.6.2</version>
+        <groupId>org.webjars.npm</groupId><artifactId>jquery</artifactId><version>3.6.3</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
