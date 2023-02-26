@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-messaging-http-client-js - JavaScript client for asynchronous bidirectional messaging over HTTP.
-Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022, 2023  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -37,7 +37,7 @@ along with ao-messaging-http-client-js.  If not, see <https://www.gnu.org/licens
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-10-29T20:45:00-05:00"
-    dateModified="2021-07-21T00:27:22-05:00"
+    dateModified="2023-02-26T14:03:56Z"
   >
     <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
       <changelog:release
@@ -78,7 +78,7 @@ along with ao-messaging-http-client-js.  If not, see <https://www.gnu.org/licens
         <li>
           <p>
             Switched to <ao:a href="https://www.npmjs.com/">NPM</ao:a>-based <ao:a href="https://www.webjars.org/">WebJars</ao:a>
-            in groupId <code><ao:a href="https://search.maven.org/search?q=g:org.webjars.npm">org.webjars.npm</ao:a></code>,
+            in groupId <code><ao:a href="https://central.sonatype.com/namespace/org.webjars.npm">org.webjars.npm</ao:a></code>,
             where possible.  The NPM WebJars seem more up-to-date and actively supported than Classic WebJars.
           </p>
           <p>
