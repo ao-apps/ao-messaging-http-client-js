@@ -35,10 +35,6 @@ along with ao-messaging-http-client-js.  If not, see <https://www.gnu.org/licens
   <properties>
     <project.build.outputTimestamp>2023-02-08T21:06:04Z</project.build.outputTimestamp>
     <module.name>com.aoapps.messaging.http.client.js</module.name>
-    <!-- SonarQube -->
-    <sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
-    <sonar.organization>ao-apps</sonar.organization>
-    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
 
   <name>AO Messaging HTTP Client JS</name>
