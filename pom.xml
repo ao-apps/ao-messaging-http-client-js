@@ -30,7 +30,7 @@ along with ao-messaging-http-client-js.  If not, see <https://www.gnu.org/licens
   </parent>
 
   <groupId>com.aoapps</groupId><artifactId>ao-messaging-http-client-js</artifactId><version>3.0.0-POST-SNAPSHOT</version>
-  <packaging>bundle</packaging>
+  <packaging>jar</packaging>
 
   <properties>
     <module.name>com.aoapps.messaging.http.client.js</module.name>
