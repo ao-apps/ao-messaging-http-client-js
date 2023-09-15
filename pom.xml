@@ -102,20 +102,6 @@ along with ao-messaging-http-client-js.  If not, see <https://www.gnu.org/licens
     </repository>
   </repositories>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
-        <configuration>
-          <usedDependencies>
-            <!-- Runtime Direct -->
-            <dependency>org.webjars.npm:jquery</dependency>
-          </usedDependencies>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
   <dependencyManagement>
     <dependencies>
       <!-- Runtime Direct -->
