@@ -6,7 +6,7 @@
 [![ecmascript: &gt;= 3](https://oss.aoapps.com/ao-badges/ecmascript-3.svg)](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 [![javascript: &gt;= 1.5](https://oss.aoapps.com/ao-badges/javascript-1.5.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.5)
 [![jquery: &gt;= 1.x](https://oss.aoapps.com/ao-badges/jquery-1.x.svg)](https://api.jquery.com/)
-[![semantic versioning: 2.0.0](https://oss.aoapps.com/ao-badges/semver-2.0.0.svg)](http://semver.org/spec/v2.0.0.html)
+[![semantic versioning: 2.0.0](https://oss.aoapps.com/ao-badges/semver-2.0.0.svg)](https://semver.org/spec/v2.0.0.html)
 [![license: LGPL v3](https://oss.aoapps.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
 [![Build](https://github.com/ao-apps/ao-messaging-http-client-js/workflows/Build/badge.svg?branch=master)](https://github.com/ao-apps/ao-messaging-http-client-js/actions?query=workflow%3ABuild)
