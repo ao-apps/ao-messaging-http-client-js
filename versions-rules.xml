@@ -31,7 +31,7 @@ along with ao-messaging-http-client-js.  If not, see <https://www.gnu.org/licens
     <rule groupId="org.webjars.npm" artifactId="jquery" comparisonMethod="maven">
       <ignoreVersions>
         <ignoreVersion type="regex">.*-alpha[0-9]*</ignoreVersion>
-        <ignoreVersion type="regex">.*-beta[0-9]*</ignoreVersion>
+        <ignoreVersion type="regex">.*-beta\.?[0-9]*</ignoreVersion>
         <ignoreVersion type="regex">.*-rc[0-9]*</ignoreVersion>
       </ignoreVersions>
     </rule>
