@@ -22,7 +22,7 @@ JavaScript client for asynchronous bidirectional messaging over HTTP.
 ## Project Links
 * [Project Home](https://oss.aoapps.com/messaging/http/client-js/)
 * [Changelog](https://oss.aoapps.com/messaging/http/client-js/changelog)
-* [Maven Central Repository](https://central.sonatype.com/artifact/com.aoapps/ao-messaging-http-client-js)
+* [Central Repository](https://central.sonatype.com/artifact/com.aoapps/ao-messaging-http-client-js)
 * [GitHub](https://github.com/ao-apps/ao-messaging-http-client-js)
 
 ## Contact Us
